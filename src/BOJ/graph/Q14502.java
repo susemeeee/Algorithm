@@ -62,16 +62,6 @@ public class Q14502 {
         }
     }
 
-    static void print(){
-        for(int i = 0; i < copy.length; i++){
-            for(int j = 0; j < copy[0].length; j++){
-                System.out.print(copy[i][j]);
-            }
-            System.out.println();
-        }
-        System.out.println();
-    }
-
     static void spread(){
         copy();
         Queue<Integer[]> queue = new LinkedList<>();
@@ -97,7 +87,6 @@ public class Q14502 {
 
         }
 
-        print();
         int safe = getSafe();
         if(safe > max){
             max = safe;
